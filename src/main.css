@@ -24,7 +24,6 @@ body {
   background-color: #e0dede;
 }
 .myinfo {
-  position: relative;
   height: 170px;
   width: 100%;
   background-color: #797878;
@@ -45,7 +44,6 @@ body {
   margin: 6px;
 }
 footer {
-  position: relative;
   height: 50px;
   width: 100%;
 }
