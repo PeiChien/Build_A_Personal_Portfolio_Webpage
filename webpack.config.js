@@ -24,7 +24,8 @@ module.exports={
                 removeAttributeQuotes: false, //删除属性双引号
                 collapseWhitespace: false //变成一行
             },
-            hash: false
+            hash:false,
+            favicon:'./src/favicon.ico'//打包icon图标
         }),
         new MiniCssExtractPlugin({
             filename:'main.css'
