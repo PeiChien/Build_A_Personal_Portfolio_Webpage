@@ -22,6 +22,7 @@ body {
   border-bottom: solid #5e5e5e 1px;
   padding: 500px 15px;
   background-color: #e0dede;
+  position: relative;
 }
 .myinfo {
   height: 170px;
