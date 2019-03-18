@@ -1,4 +1,5 @@
 require('./main.css');
+require('./贪吃蛇.js');
 $(document).ready(function () {
 
     let fulla = $("#Home").offset().top;
