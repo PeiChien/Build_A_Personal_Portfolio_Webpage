@@ -2,7 +2,7 @@
         (function () {
             var thst = null;
             //游戏的构造函数
-            function Game(map,speed) {
+            function Game(map, speed) {
                 this.food = new Food();
                 this.snake = new Snake();
                 this.map = map;
@@ -35,10 +35,16 @@
                     if (headX < 0 || headX >= maxX) {
                         clearInterval(timeId);
                         alert("游戏结束");
+
+                        //刷新页面
+                        location.reload();
                     }
-                    if (headY < 0 || headY >= maxX) {
+                    if (headY < 0 || headY >= maxY) {
                         clearInterval(timeId);
                         alert("游戏结束");
+
+                        //刷新页面
+                        location.reload();
                     }
                 }.bind(that), this.speed);
             }
@@ -67,5 +73,3 @@
             //把Game暴露给window
             window.Game = Game;
         }());
-
-        
