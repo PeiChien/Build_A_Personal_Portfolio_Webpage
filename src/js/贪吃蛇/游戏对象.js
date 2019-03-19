@@ -2,10 +2,11 @@
         (function () {
             var thst = null;
             //游戏的构造函数
-            function Game(map) {
+            function Game(map,speed) {
                 this.food = new Food();
                 this.snake = new Snake();
                 this.map = map;
+                this.speed = speed;
                 that = this;
             }
             Game.prototype.init = function () {
@@ -39,7 +40,7 @@
                         clearInterval(timeId);
                         alert("游戏结束");
                     }
-                }.bind(that), 150);
+                }.bind(that), this.speed);
             }
 
             //添加原型方法---设置用户按键，改变小蛇移动方向
@@ -67,8 +68,4 @@
             window.Game = Game;
         }());
 
-        //初始化游戏对象
-        var gm = new Game(document.getElementById("Contact"));
-
-        //开始游戏
-        gm.init();
+        
