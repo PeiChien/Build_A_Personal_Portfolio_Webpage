@@ -1,3 +1,5 @@
+//import $ from 'jquery';
+
 $(document).ready(function () {
 
     let fulla = $("#Home").offset().top;
