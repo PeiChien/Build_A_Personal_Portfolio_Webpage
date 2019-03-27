@@ -23,5 +23,6 @@ $(document).ready(function () {
         $("html, body").animate({
             scrollTop: $(this.hash).offset().top
         }, 700);
+        return false;//这个很重要！！！防止默认点击跳转生效
     });
 });
